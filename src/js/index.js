@@ -47,6 +47,7 @@ async function onSubmit(e) {
   }
 
   if (searchQueryResult !== q) {
+    pageN = 1;
     pixabayAPI.page = `${pageN}`;
     cleanContainer();
   } else {
